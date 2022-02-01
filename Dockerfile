@@ -68,7 +68,7 @@ RUN true \
  && echo 'INPUT ( libldap.so )' > /usr/lib/libldap_r.so \
  && pip install \
       cairocffi==1.1.0 \
-      django==2.2.26 \
+      django==2.2.27 \
       django-statsd-mozilla \
       fadvise \
       gunicorn==20.1.0 \
@@ -82,7 +82,7 @@ RUN true \
       psycopg2 \
       django-cockroachdb==2.2.*
 
-ARG version=1.1.8
+ARG version=1.1.9
 
 # install whisper
 ARG whisper_version=${version}
